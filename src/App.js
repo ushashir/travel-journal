@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./components/Nav";
+import TravelInfo from "./components/Travelnfo";
+import { data } from "./data";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <div className="container">
+        {data.map((item) => {
+          const { id, country, title, period, desc, image } = item;
+          return (
+            <div key={id}>
+              <TravelInfo
+                country={country}
+                title={title}
+                period={period}
+                desc={desc}
+                photo={image}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

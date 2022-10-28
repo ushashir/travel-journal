@@ -1,0 +1,17 @@
+.nav {
+    position: fixed;
+        width: 100%;
+        height: 55px;
+        left: 0px;
+        top: 0px;
+        background: #F55A5A;
+}
+.nav-content {
+    color: #ffff;
+    display: grid;
+    height: 16px;
+    text-align: center;
+}
+.nav-content img {
+    background-color: #ffff;
+}

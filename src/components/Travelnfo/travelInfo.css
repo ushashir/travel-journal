@@ -1,0 +1,9 @@
+.travel-info {
+    display: flex;
+    position: relative;
+    padding-top: 100px;
+}
+.travel-info > .place-photo img {
+    margin-right: 25px;
+    position: relative;
+}
