@@ -8,9 +8,9 @@ function Nav (props) {
         <div className='nav'>
             <div className="nav-content">
                 <div className="nav-log">
-                    <img src={logo1} alt="display log" />
+                    <img src={logo} alt="display log" />
                 </div>
-            my travel jurnal.
+           My Travel Journal by Ushahemba Shir
             </div>
             
         </div>
